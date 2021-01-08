@@ -1,0 +1,229 @@
+/* ----------------------------- Collapse ----------------------------- */
+
+/* .acordeon-boton{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  text-align: left;
+  transition: background .2s;
+}
+
+.acordeon-boton::after{
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+.acordeon-boton--active{
+  background-color: #555;
+}
+
+.acordeon-boton--active::after{ 
+  content: '\25b4';
+  transform: scale(2);
+}
+
+.acordeon-content{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+  padding: 0 15px;
+  font-family: sans-serif;
+  background-color: #eee;
+} */
+
+/* ----------------------------- Toggle ----------------------------- */
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background .5s ease;
+}
+
+.label{
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  height: 26px;
+  width: 50px;
+}
+
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.titulo {
+  transition: color .5s ease;
+}
+
+.fa-moon{
+  color: #f1c40f;
+  margin: 2px;
+}
+
+.fa-sun{
+  color: #f39c12;
+  margin: 2px;
+}
+
+.ball{
+  height: 22px;
+  width: 22px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform .5s ease;
+}
+
+body.dark{
+  background-color: #292c35;
+  color: white;
+} */
+
+
+
+/* ----------------------------- Modal ----------------------------- */
+
+/* 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 40px;
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+section div h2{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+section p {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+} */
+
+/* section img{
+  height: 60%;
+} */
+
+/* .cta{
+  display: block;
+  padding: 7px 0;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #283773;
+  background-color: white;
+}
+
+.modal-container{
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal{
+  width: 40%;
+  height: 50%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  transition: transform .8s;
+  transform: translateY(0%);
+  overflow: hidden;
+}
+
+.modal img {
+  width: 50%;
+}
+
+.close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #c44a4a;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.modal-close{
+  transform: translateY(-200%);
+}
+ */
+
+
+
+
+/* ----------------------------- Ejercicio Scroll ----------------------------- */
+
+
+body::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
+}
+
+
+body{
+  width: 100%;
+  height: 2000px;
+}
+
+.div1,.div2,.div3,.div4{
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  background-color: black;
+}
