@@ -64,19 +64,53 @@
 // 1001px - 1500px	blue
 // 1501px - 2000px	orange
 
-window.addEventListener('scroll', ()=>{
-  const tamañoPantalla = document.body.scrollHeight;
-  const tamanoScroll = 369;
-  const positionY = window.scrollY;
-  const coordenada = positionY + tamanoScroll;
-  console.log(tamañoPantalla)
-  if(coordenada <= 500){
-    document.body.style.backgroundColor = 'red'
-  } else if(coordenada >= 501 && coordenada <= 1000){
-    document.body.style.backgroundColor = 'green'
-  } else if(coordenada >= 1001 && coordenada <= 1500){
-    document.body.style.backgroundColor = 'blue'
-  } else if(coordenada >= 1501){
-    document.body.style.backgroundColor = 'orange'
-  }
-})
+// window.addEventListener('scroll', ()=>{
+//   const tamañoPantalla = document.body.scrollHeight;
+//   const tamanoScroll = 369;
+//   const positionY = window.scrollY;
+//   const coordenada = positionY + tamanoScroll;
+//   console.log(tamañoPantalla)
+//   if(coordenada <= 500){
+//     document.body.style.backgroundColor = 'red'
+//   } else if(coordenada >= 501 && coordenada <= 1000){
+//     document.body.style.backgroundColor = 'green'
+//   } else if(coordenada >= 1001 && coordenada <= 1500){
+//     document.body.style.backgroundColor = 'blue'
+//   } else if(coordenada >= 1501){
+//     document.body.style.backgroundColor = 'orange'
+//   }
+// })
+
+
+
+/* ----------------------------- scroll ----------------------------- */
+
+
+// scroll
+// Crear un documento html con un body de 2000px de alto. Cuando se scrollea el body, cambiar el color de fondo cada 500px, por ejemplo:
+
+// Scroll	Color de fondo
+// 0px - 500px	red
+// 501px - 1000px	green
+// 1001px - 1500px	blue
+// 1501px - 2000px orange
+// const tamanoPantalla = document.body.scrollHeight;
+// console.log(tamanoPantalla);
+
+
+// window.addEventListener('scroll', () =>{
+//   const body = document.getElementById('body');
+//   // const tamanoPantalla = document.body.scrollHeight;
+//   const tamanoScroll = 362;
+//   const coordenada = window.scrollY + tamanoScroll;
+//   console.log(coordenada);
+//   if(coordenada <= 500){
+//     body.style.backgroundColor = 'red';
+//   } else if(coordenada > 500 && coordenada <= 1000){
+//     body.style.backgroundColor = 'green';
+//   } else if(coordenada > 1000 && coordenada <= 1500){
+//     body.style.backgroundColor = 'blue';
+//   } else {
+//     body.style.backgroundColor = 'orange';
+//   }
+// })
